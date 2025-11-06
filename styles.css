@@ -1,0 +1,215 @@
+/* ==== BASE ==== */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f2eee7;
+    color: #393f50;
+    scroll-behavior: smooth;
+}
+
+#texto-claro {
+    color: #f2eee7;
+}
+
+#texto-escuro {
+    color: #393f50;
+}
+
+/* ==== HERO ==== */
+header {
+    background: url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+    color: #f2eee7;
+    position: relative;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.75); /* Azul-petróleo translúcido */
+}
+
+header .content {
+    position: relative;
+    z-index: 2;
+}
+
+header h1 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: #f2eee7;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+header p {
+    font-size: 1.25rem;
+    color: #bcaa8a;
+    opacity: 0.9;
+}
+
+.btn-primary {
+    background-color: #f2eee7;
+    border: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    color: #435892;
+}
+
+.btn-primary:hover {
+    background-color: #435892;
+    color: #f2eee7;
+}
+
+/* ==== TEXTOS ==== */
+.text-white {
+    color: #f2eee7 !important;
+}
+
+/* ==== SECTIONS ==== */
+section {
+    padding: 90px 0;
+}
+
+h2.section-title {
+    font-weight: 700;
+    color: #f2eee7;
+    margin-bottom: 20px;
+}
+
+#h2.projetos {
+    font-weight: 700;
+    color: #435892;
+    margin-bottom: 20px;
+}
+
+.section-subtitle {
+    color: #435892;
+    margin-bottom: 40px;
+}
+
+/* ==== SERVICE CARDS ==== */
+
+#servicos{
+    background-color: #393f50;
+
+}
+.service-card {
+    transition: all 0.3s ease;
+    border: none;
+    border-radius: 12px;
+    background: #f2eee7;  
+    box-shadow: 0 4px 20px rgba(57, 63, 80, 0.08);
+    color: #393f50;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(57, 63, 80, 0.15);
+}
+
+.service-icon {
+    font-size: 2.5rem;
+    color: #435892;
+}
+
+/* ==== CARROSSEL ==== */
+.carousel-item img {
+    border-radius: 12px;
+    height: 420px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.carousel-caption {
+    background: rgba(57, 63, 80, 0.75);
+    border-radius: 10px;
+}
+
+.carousel-caption h5 {
+    color: #f2eee7;
+    font-weight: 600;
+}
+
+.carousel-caption p {
+    color: #bcaa8a;
+}
+
+/* ==== SOBRE ==== */
+#title-sobre {
+    color: #435892;
+    margin-bottom: 40px;
+}
+
+#sobre {
+    background: url('https://images.unsplash.com/photo-1521790366321-3e1d64d6b28f?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+    color: #393f50;
+    position: relative;
+}
+
+#sobre::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: #f2eee7;
+}
+
+#sobre .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* ==== CONTATO ==== */
+#contato {
+    background-color: #435892;
+    color: #f2eee7;
+}
+
+#contato .btn-primary {
+    background-color: #bcaa8a;
+    color: #393f50;
+}
+
+#contato .btn-primary:hover {
+    background-color: #f2eee7;
+    color: #393f50;
+}
+
+/* ==== FOOTER ==== */
+footer {
+    background-color: #393f50;
+    color: #f2eee7;
+    padding: 40px 0;
+    font-size: 0.95rem;
+}
+
+footer a {
+    color: #bcaa8a;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #f2eee7;
+    text-decoration: underline;
+}
+
+/* ==== SCROLLBAR ==== */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f2eee7;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #f2eee7;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #435892;
+}
